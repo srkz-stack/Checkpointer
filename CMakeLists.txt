@@ -3,4 +3,7 @@ project(Checkpointer)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Checkpointer main.cpp)
+add_executable(Checkpointer main.cpp
+        main.h
+        cli_parser.cpp
+        cli_parser.h)

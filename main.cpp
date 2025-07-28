@@ -1,17 +1,9 @@
-#include<iostream>
-#include<cstring>
+#include "cli_parser.h"
+#include "main.h"
+
 
 int main(int argc, char *argv[]) {
-    std::cout << "this is the Checkpointer project." << '\n';
-    const char* const init = "init";
-    while (argc > 1) {
-        if (!strcmp(argv[1], init)){
-            std::cout << "this is the place holder for init tag" << '\n';
-            break;
-        }else {
-            break;
-        }
-    }
+    cli_parser(argc, argv);
     return 0;
 
 }
