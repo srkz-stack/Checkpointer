@@ -15,6 +15,7 @@ Checkpointer aims to replicate some of the core functionalities of Git, providin
 As of now, the project has the basic foundation in place:
 
 * **Command Line Interface (CLI) Parser:** The application can accept and parse initial commands from the user's terminal input.
+* **Modular Code Structure:** Declarations are separated into header files (`cli_parser.h`, `main.h`) to improve organization and maintainability.
 
 ---
 
@@ -52,7 +53,8 @@ To get a local copy up and running, follow these simple steps.
 
 ### Day 1 (July 28, 2025)
 * Set up the initial project structure.
-* Implemented a basic CLI parser to handle user commands (`init`, `buffer`, `commit`). The parser converts string commands into a scoped `enum` for safe handling in a `switch` statement.
+* Implemented a basic CLI parser to handle user commands (`init`, `buffer`, `commit`).
+* Created header files (`cli_parser.h`, `main.h`) to separate declarations from definitions, improving code organization.
 
 ---
 
