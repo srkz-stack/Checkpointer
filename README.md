@@ -63,7 +63,7 @@ To get a local copy up and running, follow these simple steps.
 The next steps in the development roadmap are:
 
 * [ ] **`init` command:** Implement the logic to create a new, empty Checkpointer repository (`.checkpointer` directory).
-* [ ] **`buffer` command:** Implement a staging area (similar to Git's index) to track files before committing.
+* [ ] **`buffer` command:** Implement a staging area (similar to "git add" command) to track files before committing.
 * [ ] **`commit` command:** Implement the functionality to save a snapshot of the staged files.
 
 ---
