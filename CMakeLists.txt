@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 23)
 add_executable(Checkpointer main.cpp
         main.h
         cli_parser.cpp
-        cli_parser.h)
+        cli_parser.h
+        command_init.cpp
+        commands.h)
