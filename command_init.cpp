@@ -18,7 +18,7 @@ int create_maindir() { // this is the function which will create the .checkpoint
 void init_repo() {
     const int creation = create_maindir();//this is the function which will create the .checkpointer directory in the repo location
     if (creation == 1) {
-        std::cout << "here comes the next step" << '\n';
+        std::cout << " " << '\n';
     }else {
         exit(EXIT_SUCCESS);
     }

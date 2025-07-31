@@ -26,7 +26,7 @@ void Checkpointer_welcome() {
 }
 
 void Checkpointer_init() {
-    std::cout << "This is a placeholder for init functionality." << '\n';
+    std::cout << "initiating the repo" << '\n';
     init_repo();
 }
 
