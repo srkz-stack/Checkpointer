@@ -2,8 +2,7 @@
 // Created by srk on 7/28/25.
 //
 #include "main.h"
-#include "cli_parser.h"
-#include<cstdlib>
+
 
 enum class CheckpointerCommands {
     init,
@@ -27,7 +26,8 @@ void Checkpointer_welcome() {
 }
 
 void Checkpointer_init() {
-    std::cout << "This is a placeholder for init functionality." << '\n';
+    std::cout << "initiating the repo" << '\n';
+    init_repo();
 }
 
 void Checkpointer_buffer() {

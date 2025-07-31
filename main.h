@@ -7,6 +7,12 @@
 
 #include<iostream>
 #include<cstring>
+#include<sys/stat.h>
+
+
+
+#include "cli_parser.h"
+#include "commands.h"
 
 #define VERSION 0.1;
 
