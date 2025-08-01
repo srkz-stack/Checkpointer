@@ -18,8 +18,10 @@ void initCommand::createSubdir() {
     mkdir(subDirectoryName_info, mode);
     mkdir(subDirectoryName_objects, mode);
     mkdir(subDirectoryName_objects_info, mode);
-
-
+    mkdir(subDirectoryName_objects_pack, mode);
+    mkdir(subDirectoryName_refs, mode);
+    mkdir(subDirectoryName_refs_heads, mode);
+    mkdir(subDirectoryName_refs_tags, mode);
 }
 void initCommand::initRepo() {
     //this is the function which will create the .checkpointer directory in the repo location

@@ -15,14 +15,14 @@ public:
 
 private:
     const char* mainDirectoryName = ".checkpointer";
-    const char* subDirectoryName_hooks = "hooks";
-    const char* subDirectoryName_info = "info";
-    const char* subDirectoryName_objects = "objects";
-    const char* subDirectoryName_objects_info = "objects/info/";
-    const char* subDirectoryName_objects_pack = "objects/pack";
-    const char* subDirectoryName_refs = "refs";
-    const char* subDirectoryName_refs_heads = "refs/heads/";
-    const char* subDirectoryName_refs_tags = "refs/tags/";
+    const char* subDirectoryName_hooks = ".checkpointer/hooks/";
+    const char* subDirectoryName_info = ".checkpointer/info/";
+    const char* subDirectoryName_objects = ".checkpointer/objects/";
+    const char* subDirectoryName_objects_info = ".checkpointer/objects/info/";
+    const char* subDirectoryName_objects_pack = ".checkpointer/objects/pack";
+    const char* subDirectoryName_refs = ".checkpointer/refs/";
+    const char* subDirectoryName_refs_heads = ".checkpointer/refs/heads/";
+    const char* subDirectoryName_refs_tags = ".checkpointer/refs/tags/";
     mode_t mode = S_IRWXG | S_IRWXU | S_IRWXO;
 
 };

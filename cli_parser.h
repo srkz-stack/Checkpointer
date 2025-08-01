@@ -20,8 +20,6 @@ void cli_parser(int argc, char* argv[]);
 class cliParser {
 public:
     static void cli_Parser(int argc, char* argv[]);
-
-
 private:
 
 
