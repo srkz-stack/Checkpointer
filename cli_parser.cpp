@@ -1,7 +1,7 @@
 //
 // Created by srk on 7/28/25.
 //
-#include "main.h"
+#include "cli_parser.h"
 
 
 enum class CheckpointerCommands {
@@ -12,39 +12,32 @@ enum class CheckpointerCommands {
     unknown
 };
 
-
-CheckpointerCommands commandPass(const std::string& str) {
+inline CheckpointerCommands commandPass(const std::string& str) {
     if (!strcmp(str.c_str() , "init")) return CheckpointerCommands::init;
     if (!strcmp(str.c_str() , "buffer")) return CheckpointerCommands::buffer;
     if (!strcmp(str.c_str() , "commit")) return CheckpointerCommands::commit;
     if (!strcmp(str.c_str() , "quit")) return CheckpointerCommands::quit;
     return CheckpointerCommands::unknown;
 }
-
 void Checkpointer_welcome() {
     std::cout << "Welcome to Checkpointer, a GIT like version control system." << '\n';
 }
-
 void Checkpointer_init() {
     std::cout << "initiating the repo" << '\n';
-    init_repo();
+    initCommand i;
+    i.initRepo();
 }
-
 void Checkpointer_buffer() {
     std::cout << "This is a placeholder for buffer functionality." << '\n';
 }
-
 void Checkpointer_commit() {
     std::cout << "This is a placeholder for commit functionality." << '\n';
 }
-
-
 void Checkpointer_quit() {
     std::cout << "quitting Checkpointer..." << '\n';
     exit(EXIT_SUCCESS);
 }
-
-void cli_parser(int argc, char* argv[]) {
+void cliParser::cli_Parser(int argc, char* argv[]) {
     if (argc<=1) {
         Checkpointer_welcome();
     }else if (argc >= 2) {
