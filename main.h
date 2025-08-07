@@ -12,9 +12,8 @@
 
 
 #include "cli_parser.h"
-#include "commands.h"
 
-#define VERSION 0.1;
+#define VERSION "0.1.1";
 
 
 
