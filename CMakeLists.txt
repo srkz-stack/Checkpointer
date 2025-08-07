@@ -8,5 +8,8 @@ add_executable(Checkpointer main.cpp
         cli_parser.cpp
         cli_parser.h
         command_init.cpp
-        commands.h
-        command_init.h)
+        command_init.h
+        command_buffer.cpp
+        command_buffer.h
+        sha256.h
+        sha256.cpp)

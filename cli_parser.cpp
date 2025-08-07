@@ -2,6 +2,7 @@
 // Created by srk on 7/28/25.
 //
 #include "cli_parser.h"
+#include "command_buffer.h"
 
 
 enum class CheckpointerCommands {
@@ -27,8 +28,9 @@ void Checkpointer_init() {
     initCommand i;
     i.initRepo();
 }
-void Checkpointer_buffer() {
-    std::cout << "This is a placeholder for buffer functionality." << '\n';
+void Checkpointer_buffer(int argc, char *argv[]) {
+    bufferCommand b;
+    b.bufferRepo(argc, argv);
 }
 void Checkpointer_commit() {
     std::cout << "This is a placeholder for commit functionality." << '\n';
