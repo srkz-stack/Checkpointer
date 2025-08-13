@@ -5,7 +5,7 @@
 #include<fstream>
 
 void bufferCommand::createIndexFile() {
-    std::ofstream index("index.txt");
+    std::ofstream index("/.checkpointer/index.txt");
 }
 
 void bufferCommand::bufferRepo(int argc, char* argv[]) {
