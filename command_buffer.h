@@ -9,7 +9,7 @@
 
 class bufferCommand {
 public:
-    void bufferRepo(int argc, char* argv[]);
+    void bufferRepo(int argc, char *argv[]);
     void createIndexFile();
 
 private:

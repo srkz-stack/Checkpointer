@@ -45,7 +45,7 @@ void cliParser::cli_Parser(int argc, char* argv[]) {
     }else if (argc >= 2) {
         switch (commandPass(argv[1])) {
             case CheckpointerCommands::init: Checkpointer_init(); break;
-            case CheckpointerCommands::buffer: Checkpointer_buffer(); break;
+            case CheckpointerCommands::buffer: Checkpointer_buffer(argc, argv); break;
             case CheckpointerCommands::commit: Checkpointer_commit(); break;
             case CheckpointerCommands::quit: Checkpointer_quit(); break;
             case CheckpointerCommands::unknown: std::cout << "Not A Command of Checkpointer" << '\n'; break;
